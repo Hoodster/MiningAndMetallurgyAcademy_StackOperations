@@ -30,9 +30,8 @@ double pop(stack& head)
 	if (head.previous->value != NULL)
 	{
 		stack* previousValue = head.previous;
-		double headVar = (*previousValue).value;
 		head = *previousValue;
-		return headVar;
+		return head.value;
 	}
 }
 
